@@ -4,7 +4,7 @@ const Class = require("./Routes/Class");
 const sessionData = require("./sessionData");
 const bodyParser = require("body-parser");
 const userRoutes = require("./Routes/UserRoutes");
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
