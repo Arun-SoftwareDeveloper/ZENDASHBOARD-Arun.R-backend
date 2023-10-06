@@ -12,8 +12,10 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 // Connect to MongoDB
+const dbUrl =
+  "mongodb+srv://arunramasamy46:arunramasamy46@cluster0.vspc3li.mongodb.net/?retryWrites=true&w=majority";
 mongoose
-  .connect("mongodb://0.0.0.0:27017/ZenDasBoard", {
+  .connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
